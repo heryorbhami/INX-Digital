@@ -40,11 +40,13 @@
     font-weight: 200;
     line-height: 15px;
     font-family: 'poppins';
+    opacity: 0.5;
 }
 
-.bold-text {
-   /* font-weight: bold;*/
-    color: #000;
+.bold-text  {
+    /*font-weight: bold;*/
+    color: #f6550d;
+    opacity: 0.9;
 }
 
 .normal-text {
@@ -87,14 +89,15 @@
 
 .service-item p {
     margin-top: 3px;
+    opacity: 0.5;
     
 }
 
-.service-item:hover {
+/*.service-item:hover {
     background-color: #dfd1d1;
     color: #f6550d;
     cursor: pointer;
-}
+}*/
 .service-item svg {
     margin-bottom: 10px; /* Add space below the icon */
     display: block;
@@ -176,7 +179,7 @@
         display: block;
         margin: 0;
         font-size: 20px;
-        font-family: poppins;
+        font-family: 'poppins' sans-serif;
         font-weight: 700;
         line-height: 20px;
     }
@@ -202,10 +205,18 @@
 }
 
 @media screen and (max-width: 768px) {
+
     .service-containers {
-        grid-template-columns: 2fr; /* Stack all items in a single column */
-        flex-wrap: wrap;
-        justify-content: center;
+        width: 100%;
+        max-width: 325px;
+        height: auto; /* Adjusts to fit content */
+        padding: 20px 0px 0px 0px;
+        gap: 10px;
+        border-radius: 20px 0px 0px 0px;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .service-item {
         min-height: 400px; /* Increase height for small screens */

@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.WhyChoseUs-container {
+    width: 100%;
+    max-width: 1340px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .WhyChoseUs-container {
+        width: 325px;
+        height: 994px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Adjusted for better spacing on smaller screens */
+    }
+}
+
+.header-text {
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-text span {
+    color: #F6550D;
+}
+
+.WhyChoseUs-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1340px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 50px;
+    position: relative;
+    overflow: hidden;
+
+}
+@media screen and (max-width: 768px) {
+    .WhyChoseUs-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 325px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .top-left, .bottom-left, .top-right, .bottom-right {
+        width: 325px;
+        height: 157px;
+        padding: 10px;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        order: initial; /* Reset any previous orders */
+    }
+
+    /* Ensuring the correct stacking order */
+    .top-left {
+        order: 1;
+    }
+
+    .bottom-left {
+        order: 2;
+    }
+
+    .top-right {
+        order: 3;
+    }
+
+    .bottom-right {
+        order: 4;
+    }
+}
+
+
+/* Left Main Section */
+.left-main {
+    width: 100%;
+    max-width: 670px;
+    height: auto;
+    /*top: 60.8px;
+    padding-right: 50px;
+    padding-left: 50px;*/
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 0;
+}
+/*@media screen and (max-width: 768px) {
+    .left-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        width: 100%; 
+        margin: 0 auto; 
+        align-items: center;
+        justify-content: flex-start; 
+        padding-right: 40px;
+        border-radius: 10px;
+        margin-right: 60px;
+    }
+}*/
+
+/* Middle Main Section */
+.middle-main {
+    width: 310px;
+    height: 148px;
+    border-radius: 50px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px #00000026;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    
+    position: absolute; /* Keep it in the center */
+    top: 52%; /* Position in the middle */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center properly */
+}
+.middle-text {
+    background: linear-gradient(180deg, #0E2F7E 0%, #F6550D 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Right Main Section */
+.right-main {
+    width: 100%;
+    max-width: 670px;
+    height: 400px;
+    /*top: 60.8px;
+    left: 670px;*/
+    padding-right: 50px;
+    padding-left: 50px;
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.top-left {
+    width: 100%;
+    gap: 20px;
+    height: 100px;
+    background: #FFFFFF;
+    color: #1F1F1F;
+    display: flex;
+    flex-direction: row; /* Aligns image and text side by side */
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the left */
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 0;
+    z-index: -1;
+}
+
+/*@media screen and (max-width: 768px) {
+    .top-left {
+        width: 325px;
+        height: 157px;
+        padding-top: 100px;
+        padding-bottom: 10px;
+        gap: 20px;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        align-self: flex-start;
+        margin-top: 80%;
+        margin: 0 auto;
+        margin-left: 0;
+    }
+}*/
+
+
+/* Why Us Image 1 - Now on the Left */
+.WhyUs-image-1 {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Prevents distortion */
+    margin-right: 20px; /* Adds space between image and text */
+    flex-shrink: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .WhyUs-image-1 {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Top Left Text Container */
+.top-left-content {
+    width: 380px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .top-left-content {
+        width: 325px;
+        height: 67px;
+        gap: 10px;
+        
+    }
+}
+
+/* Top Left Header */
+.top-left-header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 13px;
+}
+
+@media screen and (max-width: 768px) {
+    .top-left-header {
+        width: 144px;
+        height: 21px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0%;
+        background:#FFFFFF ;
+        color: #1F1F1F; /* Ensure text is visible on dark background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/* Top Left Text */
+.top-left-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1F1F1F80;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .top-left-text {
+        width: 325px;
+        height: 36px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: center;
+        background: #FFFFFF;
+        color: #1F1F1F80; /* Ensures text is visible */
+        
+        /* Centering */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* Centers within parent */
+    }
+}
+
+.custom-line {
+    width: 100vw; /* Ensures it spans across top-left and bottom-left */
+    height: 1px; /* Makes it a thin horizontal line */  
+    top: 50%;
+    left: 0;
+    background: linear-gradient(to right, transparent, black, black, transparent);
+    margin: 20px 0; /* Adjusts spacing */
+    position: absolute;
+    z-index: -1;
+}
+
+.custom-line-vertical {
+    position: absolute; /* Allows precise positioning */
+    width: 1px; /* Thin vertical line */
+    height: 100%; /* Covers the full height of .WhyChoseUs-body */
+    background: linear-gradient(to bottom, transparent, black, black, transparent); /* Fading edges */
+    left: 50%; /* Places it in the center */
+    top: 0; /* Starts from the top */
+}
+
+@media screen and (max-width: 768px) {
+    .custom-line {
+        width: 80%;
+        height: 1px;
+        background: linear-gradient(to right, transparent, black, transparent);
+        margin: 10px 0; /* Space between sections */
+    }
+
+    /* Hide vertical line */
+    .custom-line-vertical {
+        display: none;
+    }
+}
+
+.bottom-left {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Space between image and text */
+    margin-left: 20px;
+    background-color: #FFFFFF;
+    margin-top: 100px;
+}
+
+.WhyUs-image-2 {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0; /* Prevents the image from resizing */
+}
+
+.bottom-left-container {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    flex-direction: column; /* Stack header and text */
+    justify-content: center;
+    gap: 10px;
+}
+
+.bottom-left-header {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.bottom-left-text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 380px; /* Ensures it doesn't exceed two lines */
+    color: #1F1F1F80;
+}
+
+
+/* Common styles for both .top-right and .bottom-right */
+.top-right, .bottom-right {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    gap: 20px; /* Space between image and text */
+    justify-content: flex-start; /* Ensures image stays on the left */
+}
+
+/* Ensuring image stays on the left */
+.WhyUs-image-3, .WhyUs-image-4 {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+/* Text container to the right */
+.top-right-container, .bottom-right-container {
+    width: 500px;
+    height: 100px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column; /* Stacks header and text vertically */
+    justify-content: center; /* Centers content */
+}
+
+/* Headers */
+.top-right-header, .bottom-right-header {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+/* Text */
+.top-right-text, .bottom-right-text {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 380px;
+    height: 48px;
+    color: #1F1F1F80;
+}
+
+
+.bottom-right-container {
+    margin-top: 100px;
+}
+
+.WhyUs-image-4{
+    margin-top: 100px;
+}
+
+@media (min-width: 769px) {
+    .space {
+        display: none;
+    }
+    .innovative-text {
+        display: block; /* Hide space */
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .space {
+        display: inline;
+    }
+    .innovation-text {
+        display: inline;
+    }
+    .middle-text {
+        white-space: normal;
+    }
+    .WhyChoseUs-body {
+        width: 325px;
+        height: 964px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        margin-top: 20px;
+        padding-top: 150px;
+    }
+
+    .middle-main {
+        width: 100%;
+        height: 76px;
+        gap: 10px;
+        border-radius: 10px;
+        padding: 20px;
+        background:#FFFFFF;
+        box-shadow: 0px 0px 10px 0px #00000026;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        position: absolute;
+        top: 0; /* Moves it to the top */
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .middle-text {
+        width: 270px;
+        height: 36px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0%;
+        text-align: center;
+        background: linear-gradient(180deg, #0E2F7E 0%, #F6550D 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        white-space: nowrap;
+    }
+    .top-left, .bottom-left, .top-right, .bottom-right {
+        width: 325px;
+        height: 157px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        gap: 20px;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .top-left-content,
+    .bottom-left-container,
+    .top-right-container,
+    .bottom-right-container {
+        width: 100%;
+        text-align: center;
+    }
+}
